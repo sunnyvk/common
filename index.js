@@ -16,8 +16,8 @@ app.use(cookieParser());
 // const path = require('path')
 
 
-// var cors = require('cors')
-// app.use(cors())
+var cors = require('cors')
+app.use(cors())
 
 // app.use(express.json())
 
