@@ -344,7 +344,14 @@ app.post("/register", async (req, res) => {
 })
 
 
-
+app.get('/register',async(req,res)=>{
+    try{
+        const  user= await  User.find({});
+        res.status(200).json( user);
+    }catch(error){
+        res.status(5009).json({message:error.message})
+    }
+})
 
 
 
