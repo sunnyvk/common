@@ -24,7 +24,7 @@ app.use(cors())
 // app.use(express.urlencoded({ extended: true }))
 
 
-// const User=require('./models/user');
+const User=require('./models/user');
 // const {auth} =require('./middlewares/auth');
 
 
@@ -294,13 +294,13 @@ app.use(cors())
 
 
 
-const userSchema = new mongoose.Schema({
-    name: String,
-    email: String,
-    password: String
-})
+// const userSchema = new mongoose.Schema({
+//     name: String,
+//     email: String,
+//     password: String
+// })
 
-const User = new mongoose.model("User", userSchema)
+// const User = new mongoose.model("User", userSchema)
 
 // //Routes
 app.post("/login", async(req, res)=> {
